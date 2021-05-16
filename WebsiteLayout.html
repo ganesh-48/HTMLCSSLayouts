@@ -1,0 +1,64 @@
+<!doctype html>
+<title> Sample Website Layout </title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header><h1>Flowers</h1></header>
+  <div id="main">
+    <article>
+      <h2>Lotus</h2>The lotus flower is regarded as the National Flower of India. 
+      Lotus symbolises beauty, purity and knowledge. 
+      It is an aquatic flower with round leaves floating on the water. 
+      It grows in freshwater lakes and shallow ponds.
+    </article>
+    <nav>
+      <h3>Mogra</h3>Mogra which is famously known as Jasmine flower 
+      is one of the most beautiful and fragrant amongst all flowering 
+      plants in Asia. The flower is also referred to as Kundumalligai, 
+      Arabian Jasmine, Jai, Jui, Chameli, Madanban, Sayali, Kunda or Mallika.
+    </nav>
+    <aside>
+      <h4>Aster</h4>Asters are daisy-like perennials with starry-shaped flower
+       heads that range in color from white to blue to purple. They bring delightful 
+       beauty to the garden in late summer and autumn, when many of our summer blooms may be fading.
+       Here's how to grow asters in your garden!
+    </aside>
+  </div>
+  <footer>Footer</footer>
+</body>
